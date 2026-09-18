@@ -28,7 +28,7 @@ export default function Navbar() {
   className="btn btn-ghost btn-sm px-2 lg:hidden"
   onClick={() => setOpen((value) => !value)}
 >
-            <span className="text-xl">☰</span>
+           <span className="text-xl">☰ Menu</span>
           </button>
           <div className="hidden lg:block">
             <Brand />
