@@ -31,7 +31,7 @@ export default function TechnologyCard({ technology, isAdded, onAdd }) {
             : 'bg-slate-950 text-white hover:bg-violet-700'
         }`}
       >
-        {isAdded ? '✓ Added to Stack' : 'Add to Stack'}
+      {isAdded ? '✓ Added to Stack' : 'Add to Stack →'}
       </button>
     </article>
   )
