@@ -20,12 +20,14 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl">
       <nav className="relative mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-3 lg:w-1/3">
-          <button
-            type="button"
-            aria-label="Open navigation menu"
-            className="btn btn-ghost btn-sm px-2 lg:hidden"
-            onClick={() => setOpen((value) => !value)}
-          >
+         <button
+  type="button"
+  aria-label={open ? 'Close navigation menu' : 'Open navigation menu'}
+  aria-expanded={open}
+  aria-controls="mobile-navigation"
+  className="btn btn-ghost btn-sm px-2 lg:hidden"
+  onClick={() => setOpen((value) => !value)}
+>
             <span className="text-xl">☰</span>
           </button>
           <div className="hidden lg:block">
@@ -57,7 +59,10 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-slate-100 bg-white px-5 py-4 lg:hidden">
+  <div
+    id="mobile-navigation"
+    className="border-t border-slate-100 bg-white px-5 py-4 lg:hidden"
+  >
           <div className="flex flex-col gap-2">
             {links.map((link) => (
               <a
