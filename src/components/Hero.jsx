@@ -16,7 +16,7 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a href="#technologies" className="gradient-button inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-bold transition">
-              Explore Technologies <span className="ml-2">→</span>
+              Explore Technologies <span className="ml-2">→</span> 🚀
             </a>
             <a href="#about" className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-700 transition hover:border-violet-300 hover:text-violet-700">
               Learn More
